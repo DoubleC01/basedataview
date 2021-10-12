@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>打开.ico</file>
+        <file>导入.ico</file>
+        <file>新建.ico</file>
+        <file>文件.ico</file>
+    </qresource>
+</RCC>

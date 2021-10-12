@@ -14,9 +14,66 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBaseDataView">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actOpenFile"/>
+    <addaction name="actNewFiles"/>
+    <addaction name="actImpexp"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuBaseDataView"/>
+  </widget>
+  <action name="actOpenFile">
+   <property name="icon">
+    <iconset resource="resource/icon/icon.qrc">
+     <normaloff>:/icon/打开.ico</normaloff>:/icon/打开.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开...</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actNewFiles">
+   <property name="icon">
+    <iconset resource="resource/icon/icon.qrc">
+     <normaloff>:/icon/新建.ico</normaloff>:/icon/新建.ico</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="toolTip">
+    <string>新建文件</string>
+   </property>
+  </action>
+  <action name="actImpexp">
+   <property name="icon">
+    <iconset resource="resource/icon/icon.qrc">
+     <normaloff>:/icon/导入.ico</normaloff>:/icon/导入.ico</iconset>
+   </property>
+   <property name="text">
+    <string>导入</string>
+   </property>
+   <property name="toolTip">
+    <string>导入文件</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource/icon/icon.qrc"/>
+ </resources>
  <connections/>
 </ui>
