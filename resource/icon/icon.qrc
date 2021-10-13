@@ -4,5 +4,8 @@
         <file>导入.ico</file>
         <file>新建.ico</file>
         <file>文件.ico</file>
+        <file>厂家编码设置.ico</file>
+        <file>管段类型设置.ico</file>
+        <file>设置.ico</file>
     </qresource>
 </RCC>

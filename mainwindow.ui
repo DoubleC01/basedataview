@@ -13,7 +13,39 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>230</y>
+      <width>391</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTableView" name="tableView"/>
+     </item>
+     <item>
+      <widget class="QListView" name="listView"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GroupBox</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -33,7 +65,15 @@
     <addaction name="actImpexp"/>
     <addaction name="separator"/>
    </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actSetFactoryID"/>
+    <addaction name="actSetPipeTypeID"/>
+   </widget>
    <addaction name="menuBaseDataView"/>
+   <addaction name="menu"/>
   </widget>
   <action name="actOpenFile">
    <property name="icon">
@@ -69,6 +109,30 @@
    </property>
    <property name="toolTip">
     <string>导入文件</string>
+   </property>
+  </action>
+  <action name="actSetFactoryID">
+   <property name="icon">
+    <iconset resource="resource/icon/icon.qrc">
+     <normaloff>:/icon/厂家编码设置.ico</normaloff>:/icon/厂家编码设置.ico</iconset>
+   </property>
+   <property name="text">
+    <string>厂家编码设置</string>
+   </property>
+   <property name="toolTip">
+    <string>设置不同厂家的编码</string>
+   </property>
+  </action>
+  <action name="actSetPipeTypeID">
+   <property name="icon">
+    <iconset resource="resource/icon/icon.qrc">
+     <normaloff>:/icon/管段类型设置.ico</normaloff>:/icon/管段类型设置.ico</iconset>
+   </property>
+   <property name="text">
+    <string>管段类型编码</string>
+   </property>
+   <property name="toolTip">
+    <string>设置不同类型管段编码</string>
    </property>
   </action>
  </widget>
