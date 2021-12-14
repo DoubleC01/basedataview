@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QFrame" name="frame">
       <property name="frameShape">
@@ -23,28 +23,30 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QComboBox" name="comboBoxFactory"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="comboBoxDiameter"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="comboBoxPipeClass"/>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
          </property>
-        </spacer>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QComboBox" name="comboBoxFactory"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxPipeClass"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxDiameter"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView"/>
        </item>
       </layout>
      </widget>
@@ -57,21 +59,28 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QTableView" name="tableView"/>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_2"/>
        </item>
       </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QFrame" name="frame_3">
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
      </widget>
     </item>
    </layout>
@@ -107,8 +116,8 @@
   </widget>
   <action name="actOpenFile">
    <property name="icon">
-    <iconset resource="resource/icon/icon.qrc">
-     <normaloff>:/icon/打开.ico</normaloff>:/icon/打开.ico</iconset>
+    <iconset>
+     <normaloff>:/toolBarIcon/打开.ico</normaloff>:/toolBarIcon/打开.ico</iconset>
    </property>
    <property name="text">
     <string>打开...</string>
@@ -119,8 +128,8 @@
   </action>
   <action name="actNewFiles">
    <property name="icon">
-    <iconset resource="resource/icon/icon.qrc">
-     <normaloff>:/icon/新建.ico</normaloff>:/icon/新建.ico</iconset>
+    <iconset>
+     <normaloff>:/toolBarIcon/新建.ico</normaloff>:/toolBarIcon/新建.ico</iconset>
    </property>
    <property name="text">
     <string>新建</string>
@@ -131,8 +140,8 @@
   </action>
   <action name="actImpexp">
    <property name="icon">
-    <iconset resource="resource/icon/icon.qrc">
-     <normaloff>:/icon/导入.ico</normaloff>:/icon/导入.ico</iconset>
+    <iconset>
+     <normaloff>:/toolBarIcon/导入.ico</normaloff>:/toolBarIcon/导入.ico</iconset>
    </property>
    <property name="text">
     <string>导入</string>
@@ -143,8 +152,8 @@
   </action>
   <action name="actSetFactoryID">
    <property name="icon">
-    <iconset resource="resource/icon/icon.qrc">
-     <normaloff>:/icon/厂家编码设置.ico</normaloff>:/icon/厂家编码设置.ico</iconset>
+    <iconset>
+     <normaloff>:/toolBarIcon/设置.ico</normaloff>:/toolBarIcon/设置.ico</iconset>
    </property>
    <property name="text">
     <string>厂家编码设置</string>
@@ -155,8 +164,8 @@
   </action>
   <action name="actSetPipeTypeID">
    <property name="icon">
-    <iconset resource="resource/icon/icon.qrc">
-     <normaloff>:/icon/管段类型设置.ico</normaloff>:/icon/管段类型设置.ico</iconset>
+    <iconset>
+     <normaloff>:/toolBarIcon/管段类型设置.ico</normaloff>:/toolBarIcon/管段类型设置.ico</iconset>
    </property>
    <property name="text">
     <string>管段类型编码</string>
@@ -166,8 +175,6 @@
    </property>
   </action>
  </widget>
- <resources>
-  <include location="resource/icon/icon.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/icon/厂家编码设置.ico</file>
+        <file>resource/icon/打开.ico</file>
+        <file>resource/icon/导入.ico</file>
+        <file>resource/icon/管段类型设置.ico</file>
+        <file>resource/icon/设置.ico</file>
+        <file>resource/icon/文件.ico</file>
+        <file>resource/icon/新建.ico</file>
+    </qresource>
+</RCC>
